@@ -1,0 +1,108 @@
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 1;
+    /* Chiếm 1 phần không gian */
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá container */
+    max-height: 50px;
+    /* Đặt chiều cao tối đa cho ảnh */
+    width: auto;
+    /* Giữ tỷ lệ gốc theo chiều rộng */
+    height: auto;
+    /* Giữ tỷ lệ gốc theo chiều cao */
+    object-fit: contain;
+    /* Giúp ảnh không bị cắt hay méo */
+}
+
+.inputs {
+    flex: 2;
+    /* Chiếm 2 phần không gian, lớn hơn logo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inputs label,
+.inputs input {
+    margin: 5px 0;
+}
+
+.custom-row-spacing {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+/* form ben phải của hỏi đáp bác sĩ */
+/* Đảm bảo cột không vượt quá chiều rộng mong muốn */
+.right-column {
+    max-width: 400px;
+    margin: 0 auto;
+    /* Căn giữa */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px darkgray;
+    border:0.5px solid rgb(255, 172, 172);
+}
+
+/* Form ở trên */
+.form-container {
+    max-height: 700px;
+    /* Giới hạn chiều cao form */
+    margin-bottom: 20px;
+    /* Tạo khoảng cách với quảng cáo */
+}
+
+/* Quảng cáo ở dưới */
+.ads-container {
+    text-align: center;
+    /* Căn giữa nội dung quảng cáo */
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    /* Đường kẻ nhẹ phân chia */
+}
+
+.ads-container .ad img {
+    width: 100%;
+    height: auto;
+    /* Giữ tỷ lệ gốc của ảnh quảng cáo */
+    max-height: 100px;
+    /* Giới hạn chiều cao tối đa của quảng cáo */
+    object-fit: contain;
+    /* Đảm bảo ảnh không bị méo */
+}
+
+/* Input tuổi */
+.age-input input {
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    /* Bo góc cho input */
+    border: 1px solid #ccc;
+    /* Đường viền nhẹ cho input */
+    outline: none;
+    /* Loại bỏ viền khi focus */
+}
+
+/* Thêm hiệu ứng khi input được focus */
+.age-input input:focus {
+    border-color: #4CAF50;
+    /* Đổi màu viền khi focus */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.2);
+    /* Thêm bóng mờ khi focus */
+}
+/* thẻ viền */
+.custom-border {
+    border-color: pink !important; /* Đổi sang màu xanh */
+    border-width: 2px !important;     /* Tùy chỉnh độ dày nếu cần */
+}
