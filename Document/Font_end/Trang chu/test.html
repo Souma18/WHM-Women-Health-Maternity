@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/back/back.css" />
+    <style>
+      /*
+        panel2
+        */
+      .img_logo {
+        max-height: 50px; /* Giới hạn chiều cao logo */
+      }
+
+      .navbar-nav .nav-link {
+        margin-right: 15px; /* Khoảng cách giữa các liên kết */
+      }
+      /* bỏ */
+      /* Panel3 với ảnh nền cố định, thu phóng theo kích thước màn hình */
+      .panel3 {
+        background-image: url("/img/background.png");
+        /* Đường dẫn ảnh nền */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* Giữ ảnh cố định khi cuộn */
+        height: 100vh;
+        /* Chiều cao panel3 bao phủ toàn màn hình */
+        display: flex;
+        justify-content: flex-end;
+        /* Đặt nội dung về bên phải */
+        align-items: center;
+        /* Căn giữa theo chiều dọc nội dung bên trong */
+        padding-right: 50px;
+        /* Thêm khoảng cách bên phải nếu cần */
+      }
+
+      /* Định dạng cho container chứa các nút chức năng */
+      .function-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Tạo lưới 2x2 */
+        gap: 20px;
+        /* Khoảng cách giữa các nút */
+      }
+
+      /* Định dạng cho các nút chức năng */
+      .function-btn {
+        border: 2px solid #f8bbd0;
+        background-color: #fff;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 180px;
+        font-size: 1rem;
+        color: #880e4f;
+      }
+
+      .function-btn img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container-fluid bg-body-tertiary">
+      <nav class="navbar">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#">Hotline tư vấn :1808 1309</a>
+          <div class="user-wrapper">
+            <span class="text-base cursor-pointer" style="color: pink"
+              >Đăng ký / Đăng nhập</span
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo bên trái -->
+          <a class="navbar-brand" href="#">
+            <img class="img_logo" alt="" src="/Backgroud/img/Logo.png" />
+          </a>
+
+          <!-- Nút toggle cho mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Chữ bên phải -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Đặt lịch khám</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hỏi đáp bác sĩ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hồ sơ sức khỏe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cẩm nang</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="panel3">
+      <div class="function-container">
+        <div class="function-btn">
+          <img src="/img/icon1.png" alt="Icon 1" />
+          <p>Đặt lịch khám</p>
+        </div>
+        <div class="function-btn">
+          <img src="/img/icon2.png" alt="Icon 2" />
+          <p>Hỏi đáp bác sĩ</p>
+        </div>
+        <div class="function-btn">
+          <img src="/img/icon3.png" alt="Icon 3" />
+          <p>Hồ sơ sức khỏe</p>
+        </div>
+        <div class="function-btn">
+          <img src="/img/icon4.png" alt="Icon 4" />
+          <p>Cẩm nang</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

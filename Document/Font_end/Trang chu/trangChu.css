@@ -1,0 +1,77 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.banner {
+  background-image: url("./img/banner.png");
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-position: bottom;
+  background-size: 100%;
+  max-height: 600px;
+}
+
+.banner-left {
+  text-align: left;
+  margin: 50px 0px 0px 0px; /*left - right - top - bot*/
+  padding: 20px;
+}
+
+.banner-left .title {
+  color: #ef579e;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.banner-left .subtitle {
+  font-size: 1.5rem;
+  color: #800000;
+  font-weight: bold;
+}
+
+/* Định dạng cho container chứa các nút chức năng */
+.banner-right {
+  margin: 0;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.banner-right .function-container {
+  display: grid;
+  grid-column: 2 / span 2;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  gap: 20px; /* Khoảng cách giữa các nút */
+  justify-items: center;
+}
+
+/* Định dạng cho các nút chức năng */
+.function-btn {
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  height: 240px;
+  font-size: 1rem;
+  color: #800000;
+  transition: all 0.1s ease;
+}
+
+.function-btn:hover {
+  border: 2px solid #f8bbd0; /* Hiển thị viền khi hover */
+  box-shadow: 0px 4px 8px rgba(174, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.function-btn img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.function-btn p {
+  color: #800000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
