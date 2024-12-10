@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Women's Health Maternity</title>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/Font_end/bootstrap/bootstrap.min.css" />
 
@@ -16,92 +18,134 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Bootstrap 5 Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <!--header start-->
     <header id="header" class="header"></header>
     <!--header end-->
     <!--banner start-->
-    <div class="container-fluid banner">
-      <div class="row align-items-center">
-        <!--Phần bên trái-->
-        <div class="col-lg-6 col-md-12 text-center banner-left">
-          <h1 class="title">WHM - Women's Health Maternity</h1>
-          <p class="subtitle">Ứng dụng chăm sóc sức khỏe phụ nữ 24/7</p>
-        </div>
-        <!-- Phần bên phải -->
-        <div class="col-md-12 banner-right">
-          <div class="function-container">
-            <div class="function-btn">
-              <img src="/img/IconDatLichKham.png" alt="Đặt lịch khám" />
-              <p>Đặt lịch khám</p>
+    <div class="bodyTrangChu">
+      <div class="justify-content-center align-items-lg-center">
+        <div class="container-fluid banner">
+          <div class="row align-items-center">
+            <!--Phần bên trái-->
+            <div class="col-lg-6 col-md-12 text-center banner-left">
+              <h1 class="title">WHM - Women's Health Maternity</h1>
+              <p class="subtitle">Ứng dụng chăm sóc sức khỏe phụ nữ 24/7</p>
             </div>
-            <div class="function-btn">
-              <img src="/img/IconHoiDapBacSi.png" alt="Hỏi đáp bác sĩ" />
-              <p>Hỏi đáp bác sĩ</p>
-            </div>
-            <div class="function-btn">
-              <img src="/img/IconHoSoSucKhoe.png" alt="Hồ sơ sức khỏe" />
-              <p>Hồ sơ sức khỏe</p>
-            </div>
-            <div class="function-btn">
-              <img src="/img/IconCamNang.png" alt="Cẩm nang" />
-              <p>Cẩm nang</p>
+            <!-- Phần bên phải -->
+            <div class="col-md-12 banner-right">
+              <div class="function-container">
+                <div class="function-btn">
+                  <img src="/img/IconDatLichKham.png" alt="Đặt lịch khám" />
+                  <p>Đặt lịch khám</p>
+                </div>
+                <div class="function-btn">
+                  <img src="/img/IconHoiDapBacSi.png" alt="Hỏi đáp bác sĩ" />
+                  <p>Hỏi đáp bác sĩ</p>
+                </div>
+                <div class="function-btn">
+                  <img src="/img/IconHoSoSucKhoe.png" alt="Hồ sơ sức khỏe" />
+                  <p>Hồ sơ sức khỏe</p>
+                </div>
+                <div class="function-btn camNang">
+                  <img src="/img/IconCamNang.png" alt="Cẩm nang" />
+                  <p>Cẩm nang y tế</p>
+                </div>
+              </div>
             </div>
           </div>
+          <!--banner end-->
         </div>
       </div>
-    </div>
-    <!--banner end-->
-    <!-- intro start -->
-    <div class="intro">
-      <div class="wrap-text">
-        <h2 class="h2-title">
-          Ưu đãi hấp dẫn chỉ có tại WHM - Women's Health Maternity
+      <!--intro page-->
+      <div class="introPage">
+        <!-- Carousel Section -->
+        <h2 class="title">
+          Ưu đãi hấp dẫn chỉ có tại WHM - Women Health Maternity
         </h2>
-        <h3 class="subtitle">được nhiều khách hàng lựa chọn</h3>
-      </div>
-      <div id="carouselExampleIndicators" class="carousel slide">
+        <p class="subtitle">được nhiều khách hàng lựa chọn</p>
+        <!-- <img src="/img/dichVuNoiBat.png" alt="test" /> -->
+
+        <div class="carousel-truotAnh">
+          <!-- Clone ảnh cuối để hỗ trợ vòng lặp -->
+          <div class="carousel-item">
+            <img src="/img/dichVuNoiBat.png" alt="Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/dichVuNoiBat.png" alt="Image 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/dichVuNoiBat2.png" alt="Image 2" />
+          </div>
+          <!-- Clone ảnh đầu để hỗ trợ vòng lặp -->
+          <div class="carousel-item">
+            <img src="img/dichVuNoiBat.png" alt="Image Clone" />
+          </div>
+        </div>
+        <!-- Indicators -->
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button data-index="0" class="active"></button>
+          <button data-index="1"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/img/intro1.png" class="d-block w-50" alt="intro1" />
-          </div>
-          <div class="carousel-item">
-            <img src="/img/intro1.png" class="d-block w-50" alt="intro1" />
-          </div>
-          <div class="carousel-item">
-            <img src="/img/intro1.png" class="d-block w-50" alt="intro1" />
-          </div>
-        </div>
+      </div>
+      <!--intro page end -->
+    </div>
+
+    <!--review start-->
+    <div class="container mt-4">
+      <div class="subtitle">Cảm nhận từ phía khách hàng</div>
+
+      <!-- Quote Section -->
+      <div class="quote-section col-lg-6 col-md-4 col-12">
+        <p>
+          “Làm mẹ ai chả thương con, nhiều khi thấy con ốm đau đưa vào bệnh viện
+          mà nhìn cảnh xếp hàng chen chúc, chờ đợi mà sốt ruột quá. May sao nhờ
+          mấy chị đồng nghiệp giới thiệu đặt trước lịch khám trên WHM nên cũng
+          yên tâm mỗi lần đưa con đi khám.”
+        </p>
+      </div>
+
+      <!-- Rating Section -->
+      <div
+        class="rating-section d-flex justify-content-start align-items-center mt-3"
+      >
+        <img src="/img/IconCamNang.png" alt="Star 1" />
+        <img src="/img/IconDatLichKham.png" alt="Star 2" />
+        <img src="/img/IconHoiDapBacSi.png" alt="Star 3" />
+        <img src="/img/IconHoSoSucKhoe.png" alt="Star 4" />
+        <img src="/img/Logo.png" alt="Star 5" />
+      </div>
+
+      <!-- Features Section -->
+      <div class="features-section col-lg-10 col-md-8 col-12">
+        <h3 class="subtitle">
+          WHM – Women’s Health Maternity là ứng dụng chăm sóc sức khỏe phụ nữ
+          24/7, với nhiều tính năng nổi bật:
+        </h3>
+        <ul>
+          <li>
+            Đặt lịch khám ưu tiên tại các cơ sở y tế trên toàn quốc, nói không
+            với xếp hàng lấy số.
+          </li>
+          <li>Tư vấn trực tiếp với bác sĩ 24/7.</li>
+          <li>
+            Miễn phí chat riêng, đảm bảo sự riêng tư, hỗ trợ kịp thời, chuyên
+            môn cao.
+          </li>
+          <li>Quản lý hồ sơ sức khỏe cá nhân một cách tiện lợi.</li>
+          <li>Cộng đồng hỏi đáp sức khỏe lớn mạnh.</li>
+        </ul>
       </div>
     </div>
-    <!-- intro end -->
+    <!--review end-->
     <!--footer start-->
-    <header id="footer" class="footer"></header>
+    <div id="footer" class="footer"></div>
     <!--footer end-->
-    <script src="/Font_end/bootstrap/bootstrap.min.js"></script>
     <script src="/Font_end/viewShare/addHeaderFooter.js"></script>
+    <script src="trangChu.js"></script>
   </body>
 </html>

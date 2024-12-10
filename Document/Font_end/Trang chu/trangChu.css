@@ -16,13 +16,13 @@ body {
   margin-left: 170px;
 }
 
-.banner-left .title {
+.title {
   color: #ef579e;
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.banner-left .subtitle {
+.subtitle {
   font-size: 1.5rem;
   color: #800000;
   font-weight: bold;
@@ -78,29 +78,85 @@ body {
   padding-bottom: 20px;
 }
 
-/* CSS cho phần intro */
-.intro {
+.camNang img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.introPage {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0; /* Khoảng cách trên và dưới */
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Căn giữa wrap-text */
-.wrap-text {
-  text-align: center; /* Căn giữa văn bản */
-  margin-bottom: 30px; /* Khoảng cách phía dưới phần văn bản */
+.carousel-item {
+  flex: 0 0 50%; /* Mỗi ảnh chiếm 50% */
+  padding: 0 10px; /* Khoảng cách giữa ảnh */
+  box-sizing: border-box;
 }
 
-.h2-title {
-  color: #ef579e;
-  font-size: 2.5rem;
-  font-weight: bold;
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px; /* Bo góc ảnh */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng ảnh */
+  min-height: 200px;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #800000;
-  font-weight: bold;
+.carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-indicators button.active {
+  background-color: #800000;
+}
+
+.quote-section {
+  color: #000;
+  font-style: italic;
+  margin-top: 20px;
+  border-left: 5px solid #800000;
+  padding-left: 15px;
+}
+
+.rating-section img {
+  width: 50px;
+  height: 50px;
+}
+
+.features-section {
+  background-color: #ffe0e5;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.features-section ul {
+  color: #000;
 }
