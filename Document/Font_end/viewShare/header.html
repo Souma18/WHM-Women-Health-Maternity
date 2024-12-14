@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Header</title>
-    <link rel="stylesheet" href="/Font_end/viewShare/header.css" />
+    <link rel="stylesheet" href="../viewShare/header.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/Font_end/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css" />
   </head>
   <body>
     <!--header start-->
@@ -61,17 +61,31 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Đặt lịch khám</a>
+                  <!-- đặt khám -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="bookingDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Đặt lịch khám
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="bookingDropdown">
+                      <li><a class="dropdown-item" href="../BacSi/bacsi.html">Bác sĩ</a></li>
+                      <li><a class="dropdown-item" href="#">Cơ sở y tế</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hỏi đáp bác sĩ</a>
+                    <a class="nav-link" href="/HoiDapBacSi/hoidap.html">Hỏi đáp bác sĩ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Hồ sơ sức khỏe</a>
+                    <a class="nav-link" href="/HoSoSucKhoe/hoSoSucKhoe.html">Hồ sơ sức khỏe</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Cẩm nang</a>
+                    <a class="nav-link" href="../CamNang/camnang.html">Cẩm nang</a>
                   </li>
                 </ul>
               </div>
@@ -82,6 +96,6 @@
       <!--navbar end-->
     </header>
     <!--header end-->
-    <script src="/Font_end/bootstrap/bootstrap.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
   </body>
 </html>
