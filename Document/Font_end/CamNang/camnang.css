@@ -2,6 +2,8 @@
 .main {
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #fff;
 }
 
@@ -132,4 +134,7 @@ a {
 .viewer div {
     display: flex;
     align-items: center;
+}
+.icon-color path {
+    fill: pink;
 }

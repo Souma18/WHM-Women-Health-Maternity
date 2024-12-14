@@ -106,3 +106,12 @@
     border-color: pink !important; /* Đổi sang màu xanh */
     border-width: 2px !important;     /* Tùy chỉnh độ dày nếu cần */
 }
+.cart-style {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}

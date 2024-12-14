@@ -1,11 +1,4 @@
 /* ========================================================================
-   1. Header
-   ======================================================================== */
-.header {
-    /* Định kiểu cho header */
-}
-
-/* ========================================================================
    2. Main Content (Panel Search, Filter, Card List)
    ======================================================================== */
 
@@ -90,17 +83,17 @@
 }
 
 /* Các thẻ card */
-    .card {
-        padding: 20px; 
-    }
+.card {
+    padding: 20px;
+}
 
-    .card-body {
-        padding: 20px;
-    }
+.card-body {
+    padding: 20px;
+}
 
-    .card-body {
-        text-align: center;
-    }
+.card-body {
+    text-align: center;
+}
 
 .card-body i {
     margin-right: 5px;
