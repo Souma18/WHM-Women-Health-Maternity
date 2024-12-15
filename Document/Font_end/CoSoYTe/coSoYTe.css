@@ -12,7 +12,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 50px 20px;
-  color: white;
+  color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -26,23 +26,36 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  background-color: rgba(253, 253, 253, 0.371); /* Màu hồng phấn với độ mờ */
-  z-index: 1; /* Đặt lớp phủ phía trên hình nền */
+  background-color: rgba(253, 253, 253, 0.132);
+  z-index: 1;
 }
 
 .panel-search * {
   position: relative;
-  z-index: 2; /* Nội dung được đặt trên lớp phủ */
+  z-index: 2;
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .custom-input {
   flex: 1;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-top-right-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.416);
   border-bottom-right-radius: 30px;
-  border: 1px solid lightpink;
+  border: 2px solid #fff;
   border-left: none;
   font-size: 1rem;
+}
+
+.custom-input::placeholder {
+  color: #fff;
 }
 
 .custom-input-group-text {
@@ -50,21 +63,15 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.304);
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  border: 1px solid lightpink;
+  border: 2px solid #fff;
 }
 
 .custom-input:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
-}
-
-.input-btn {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
 }
 
 .title {
@@ -84,12 +91,7 @@
 }
 
 .bi-search {
-  color: lightpink;
-}
-
-.panel-search p {
-  margin-bottom: 20px;
-  color: black;
+  color: #fff;
 }
 
 /* Thanh lọc */
