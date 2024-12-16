@@ -23,9 +23,9 @@
     <main class="container">
       <!-- panel tìm kiếm -->
       <div class="panel-search row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-          <h1 class="mb-2 title-color">Đặt khám trước qua WHE</h1>
-          <p class="mb-5 text-color">
+        <div class="col-12 col-md-10 col-lg-9 text-center">
+          <h1 class="title">Đặt khám trước qua WHE</h1>
+          <p class="text-color">
             Để được tiếp đón ưu tiên tại viện hoặc được tư vấn với bác sĩ giỏi
             ngay tại nhà
           </p>
@@ -44,185 +44,200 @@
           </div>
         </div>
       </div>
-      <!-- Thanh lọc -->
-      <div class="panel-filter">
-        <div class="row align-items-center">
-          <div class="col-auto">
-            <p>Chọn bác sĩ</p>
-          </div>
-          <div class="col d-flex flex-wrap justify-content-end">
-            <!-- Ví dụ lọc theo vị trí -->
-            <div class="input-filter d-flex flex-column me-3 mb-3">
-              <select class="form-select" id="rating">
-                <option value="all">Nhập vị trí</option>
-                <option value="5">Lạng Sơn</option>
-                <option value="4">Thành Phố Hồ Chí Minh</option>
-                <option value="3">Nha Trang</option>
-                <option value="3">Bình Thuân</option>
-              </select>
-            </div>
-            <!-- Ví dụ lọc theo ngày khám -->
-            <div class="input-filter d-flex flex-column me-3 mb-3">
-              <select class="form-select" id="rating">
-                <option value="all">Ngày khám</option>
-                <option value="2023-01-01">01/01/2023</option>
-                <option value="2023-01-02">02/01/2023</option>
-                <option value="2023-01-03">03/01/2023</option>
-                <option value="2023-01-04">04/01/2023</option>
-              </select>
-            </div>
-            <!-- Ví dụ lọc theo đánh giá -->
-            <div class="input-filter d-flex flex-column me-3 mb-3">
-              <select class="form-select" id="rating">
-                <option value="all">Tất cả</option>
-                <option value="5">5 sao</option>
-                <option value="4">4 sao</option>
-                <option value="3">3 sao</option>
-                <option value="3">2 sao</option>
-                <option value="3">1 sao</option>
-              </select>
-            </div>
-            <!-- Mở modal để chọn chuyên khoa hoặc giới tính -->
-            <div class="input-filter d-flex flex-column me-3 mb-3">
-              <button
-                class="btn btn-filter"
-                data-bs-toggle="modal"
-                data-bs-target="#filterModal"
-              >
-                Thêm
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- list bác sĩ -->
+
       <div class="row">
-        <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <div class="card">
-            <div class="card-img-container">
-              <img
-                src="../img/bacsi1.jpg"
-                class="card-img-top"
-                alt="Bác sĩ 1"
-              />
+        <div class="container-hospital">
+          <div class="wrapper">
+        <!-- Thanh lọc -->
+        <div class="panel-filter">
+          <div class="row align-items-center">
+            <div class="col-auto">
+              <p>Chọn bác sĩ</p>
             </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Bác sĩ A</h5>
-              <p class="card-text">Chuyên khoa: Tim mạch</p>
-
-              <!-- Icons for appointment and ratings -->
-              <div class="d-flex justify-content-center mb-2">
-                <div class="me-4"><i class="bi bi-calendar-event"></i> 10</div>
-                <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
-                <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+            <div class="col d-flex flex-wrap justify-content-end">
+              <!-- Ví dụ lọc theo vị trí -->
+              <div class="input-filter d-flex flex-column me-3 mb-3">
+                <select class="form-select" id="rating">
+                  <option value="all">Nhập vị trí</option>
+                  <option value="5">Lạng Sơn</option>
+                  <option value="4">Thành Phố Hồ Chí Minh</option>
+                  <option value="3">Nha Trang</option>
+                  <option value="3">Bình Thuân</option>
+                </select>
               </div>
-
-              <!-- Đặt khám button -->
-              <a
-                href="../DatLichBacSi/DatLichBacSi.html"
-                class="btn btn-primary"
-                >Đặt khám</a
-              >
+              <!-- Ví dụ lọc theo ngày khám -->
+              <div class="input-filter d-flex flex-column me-3 mb-3">
+                <select class="form-select" id="rating">
+                  <option value="all">Ngày khám</option>
+                  <option value="2023-01-01">01/01/2023</option>
+                  <option value="2023-01-02">02/01/2023</option>
+                  <option value="2023-01-03">03/01/2023</option>
+                  <option value="2023-01-04">04/01/2023</option>
+                </select>
+              </div>
+              <!-- Ví dụ lọc theo đánh giá -->
+              <div class="input-filter d-flex flex-column me-3 mb-3">
+                <select class="form-select" id="rating">
+                  <option value="all">Tất cả</option>
+                  <option value="5">5 sao</option>
+                  <option value="4">4 sao</option>
+                  <option value="3">3 sao</option>
+                  <option value="3">2 sao</option>
+                  <option value="3">1 sao</option>
+                </select>
+              </div>
+              <!-- Mở modal để chọn chuyên khoa hoặc giới tính -->
+              <div class="input-filter d-flex flex-column me-3 mb-3">
+                <button
+                  class="btn btn-filter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#filterModal"
+                >
+                  Thêm
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <div class="card">
-            <div class="card-img-container">
-              <img
-                src="../img/bacsi1.jpg"
-                class="card-img-top"
-                alt="Bác sĩ 1"
-              />
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Bác sĩ A</h5>
-              <p class="card-text">Chuyên khoa: Tim mạch</p>
-
-              <!-- Icons for appointment and ratings -->
-              <div class="d-flex justify-content-center mb-2">
-                <div class="me-4"><i class="bi bi-calendar-event"></i> 10</div>
-                <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
-                <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+        <!-- list bác sĩ -->
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="../img/bacsi1.jpg"
+                  class="card-img-top"
+                  alt="Bác sĩ 1"
+                />
               </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bác sĩ A</h5>
+                <p class="card-text">Chuyên khoa: Tim mạch</p>
 
-              <!-- Đặt khám button -->
-              <a href="#" class="btn btn-primary">Đặt khám</a>
+                <!-- Icons for appointment and ratings -->
+                <div class="d-flex justify-content-center mb-2">
+                  <div class="me-4">
+                    <i class="bi bi-calendar-event"></i> 10
+                  </div>
+                  <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
+                  <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+                </div>
+
+                <!-- Đặt khám button -->
+                <a
+                  href="../DatLichBacSi/DatLichBacSi.html"
+                  class="btn btn-primary"
+                  >Đặt khám</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <div class="card">
-            <div class="card-img-container">
-              <img
-                src="../img/bacsi2.jpg"
-                class="card-img-top"
-                alt="Bác sĩ 1"
-              />
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Bác sĩ A</h5>
-              <p class="card-text">Chuyên khoa: Tim mạch</p>
-
-              <!-- Icons for appointment and ratings -->
-              <div class="d-flex justify-content-center mb-2">
-                <div class="me-4"><i class="bi bi-calendar-event"></i> 10</div>
-                <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
-                <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="../img/bacsi1.jpg"
+                  class="card-img-top"
+                  alt="Bác sĩ 1"
+                />
               </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bác sĩ A</h5>
+                <p class="card-text">Chuyên khoa: Tim mạch</p>
 
-              <!-- Đặt khám button -->
-              <a href="#" class="btn btn-primary">Đặt khám</a>
+                <!-- Icons for appointment and ratings -->
+                <div class="d-flex justify-content-center mb-2">
+                  <div class="me-4">
+                    <i class="bi bi-calendar-event"></i> 10
+                  </div>
+                  <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
+                  <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+                </div>
+
+                <!-- Đặt khám button -->
+                <a href="#" class="btn btn-primary">Đặt khám</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <div class="card">
-            <div class="card-img-container">
-              <img
-                src="../img/bacsi2.jpg"
-                class="card-img-top"
-                alt="Bác sĩ 1"
-              />
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Bác sĩ A</h5>
-              <p class="card-text">Chuyên khoa: Tim mạch</p>
-
-              <!-- Icons for appointment and ratings -->
-              <div class="d-flex justify-content-center mb-2">
-                <div class="me-4"><i class="bi bi-calendar-event"></i> 10</div>
-                <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
-                <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="../img/bacsi2.jpg"
+                  class="card-img-top"
+                  alt="Bác sĩ 1"
+                />
               </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bác sĩ A</h5>
+                <p class="card-text">Chuyên khoa: Tim mạch</p>
 
-              <!-- Đặt khám button -->
-              <a href="#" class="btn btn-primary">Đặt khám</a>
+                <!-- Icons for appointment and ratings -->
+                <div class="d-flex justify-content-center mb-2">
+                  <div class="me-4">
+                    <i class="bi bi-calendar-event"></i> 10
+                  </div>
+                  <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
+                  <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+                </div>
+
+                <!-- Đặt khám button -->
+                <a href="#" class="btn btn-primary">Đặt khám</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-3 mb-4">
-          <div class="card">
-            <div class="card-img-container">
-              <img
-                src="../img/bacsi2.jpg"
-                class="card-img-top"
-                alt="Bác sĩ 1"
-              />
-            </div>
-            <div class="card-body text-center">
-              <h5 class="card-title">Bác sĩ A</h5>
-              <p class="card-text">Chuyên khoa: Tim mạch</p>
-
-              <!-- Icons for appointment and ratings -->
-              <div class="d-flex justify-content-center mb-2">
-                <div class="me-4"><i class="bi bi-calendar-event"></i> 10</div>
-                <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
-                <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="../img/bacsi2.jpg"
+                  class="card-img-top"
+                  alt="Bác sĩ 1"
+                />
               </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bác sĩ A</h5>
+                <p class="card-text">Chuyên khoa: Tim mạch</p>
 
-              <!-- Đặt khám button -->
-              <a href="#" class="btn btn-primary">Đặt khám</a>
+                <!-- Icons for appointment and ratings -->
+                <div class="d-flex justify-content-center mb-2">
+                  <div class="me-4">
+                    <i class="bi bi-calendar-event"></i> 10
+                  </div>
+                  <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
+                  <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+                </div>
+
+                <!-- Đặt khám button -->
+                <a href="#" class="btn btn-primary">Đặt khám</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="card">
+              <div class="card-img-container">
+                <img
+                  src="../img/bacsi2.jpg"
+                  class="card-img-top"
+                  alt="Bác sĩ 1"
+                />
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Bác sĩ A</h5>
+                <p class="card-text">Chuyên khoa: Tim mạch</p>
+
+                <!-- Icons for appointment and ratings -->
+                <div class="d-flex justify-content-center mb-2">
+                  <div class="me-4">
+                    <i class="bi bi-calendar-event"></i> 10
+                  </div>
+                  <div class="me-4"><i class="bi bi-person-check"></i> 25</div>
+                  <div><i class="bi bi-star-fill"></i> 4.5/5</div>
+                </div>
+
+                <!-- Đặt khám button -->
+                <a href="#" class="btn btn-primary">Đặt khám</a>
+              </div>
             </div>
           </div>
         </div>

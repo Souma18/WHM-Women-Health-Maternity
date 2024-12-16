@@ -104,7 +104,11 @@
 .list-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+}
+
+.aa {
+  padding: 5px !important;
+  margin-bottom: 20px;
 }
 
 .list-item {
@@ -113,8 +117,9 @@
   border-radius: 3px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  flex: 1 2 calc(30% - 30px);
+  flex: 1 2;
   position: relative;
+  width: 350px;
 }
 
 .list-item img {

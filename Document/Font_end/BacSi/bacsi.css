@@ -2,132 +2,151 @@
    2. Main Content (Panel Search, Filter, Card List)
    ======================================================================== */
 
-/* Panel tìm kiếm */
-.input-btn {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+/* panner*/
+.panel-search {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/panelbacsi2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.custom-input-group-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border: 1px solid lightpink;
+.panel-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(253, 253, 253, 0.132);
+  z-index: 1;
+}
+
+.panel-search * {
+  position: relative;
+  z-index: 2;
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .custom-input {
-    flex: 1;
-    padding: 0.5rem 1rem;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border: 1px solid lightpink;
-    border-left: none;
-    font-size: 1rem;
+  flex: 1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.416);
+  border-bottom-right-radius: 30px;
+  border: 2px solid #fff;
+  border-left: none;
+  font-size: 1rem;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+}
+
+.custom-input-group-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.304);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 2px solid #fff;
 }
 
 .custom-input:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
 }
 
-.title-color {
-    color: lightpink;
+.title {
+  color: #800000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
 }
 
 .text-color {
-    color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(28, 28, 28);
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
 }
 
 .bi-search {
-    color: lightpink;
-}
-
-.panel-search {
-    max-width: 100%;
-    background-image: url('../img/panelbacsi2.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 20px;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.panel-search h1 {
-    margin-bottom: 10px;
-    color: lightpink;
-}
-
-.panel-search p {
-    margin-bottom: 20px;
-    color: black;
-}
-
-/* Thanh lọc */
-.panel-filter {
-    margin-top: 30px;
-    gap: 10px;
+  color: #fff;
 }
 
 /* Các phần tử lọc */
 .input-filter select {
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 /* Các thẻ card */
 .card {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 
 .card-body {
-    text-align: center;
+  text-align: center;
 }
 
 .card-body i {
-    margin-right: 5px;
-    color: #007bff;
+  margin-right: 5px;
+  color: #007bff;
 }
 
 .card-body .d-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .card-body .bi-star-fill {
-    color: #f39c12;
+  color: #f39c12;
 }
 
 /* Card Image */
 .card-img-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    /* Đảm bảo chiều cao cố định */
-    overflow: hidden;
-    /* Ẩn phần ảnh bị tràn ra ngoài */
+  position: relative;
+  width: 100%;
+  height: 200px;
+  /* Đảm bảo chiều cao cố định */
+  overflow: hidden;
+  /* Ẩn phần ảnh bị tràn ra ngoài */
 }
 
 .card-img-top {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Đảm bảo ảnh luôn phủ đầy thẻ mà không bị biến dạng */
-    border-radius: 0;
-    /* Bỏ bo góc cho ảnh */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Đảm bảo ảnh luôn phủ đầy thẻ mà không bị biến dạng */
+  border-radius: 0;
+  /* Bỏ bo góc cho ảnh */
 }
 
 /* ========================================================================
@@ -136,35 +155,35 @@
 
 /* Modal */
 .modal-header {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .modal-body {
-    padding: 15px;
+  padding: 15px;
 }
 
 .input-filter {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .input-filter select {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .modal-footer {
-    text-align: right;
+  text-align: right;
 }
 
 /* ========================================================================
    4. Footer
    ======================================================================== */
 .footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
 }
 
 /* ========================================================================
@@ -173,12 +192,12 @@
 
 /* Điều chỉnh cho màn hình nhỏ */
 @media (max-width: 768px) {
-    .panel-search {
-        padding: 30px 15px;
-    }
+  .panel-search {
+    padding: 30px 15px;
+  }
 
-    .card-img-container {
-        width: 80%;
-        height: 160px;
-    }
+  .card-img-container {
+    width: 80%;
+    height: 160px;
+  }
 }
