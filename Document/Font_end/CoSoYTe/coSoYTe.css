@@ -85,9 +85,20 @@
 .text-color {
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(28, 28, 28);
-  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
-    2px 2px 0 #fff;
+  color: rgb(28, 28, 28); /* Màu chữ đen */
+  position: relative;
+}
+
+/* Viền trắng rõ nét */
+.text-color::before {
+  content: attr(data-text); /* Sao chép nội dung của thẻ */
+  position: absolute;
+  top: 0;
+  left: 32px;
+  z-index: -1;
+  color: white;
+  -webkit-text-stroke: 2px white;
+  font-weight: bold;
 }
 
 .bi-search {
