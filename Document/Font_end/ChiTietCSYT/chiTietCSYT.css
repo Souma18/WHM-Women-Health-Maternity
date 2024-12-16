@@ -1,0 +1,60 @@
+.body {
+  font-family: "Inter", "Helvetica Neue";
+}
+
+.hospital {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Hospital detail section */
+.detail-hospital {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  align-items: center;
+}
+
+.img-csyt img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-csyt {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.information {
+  margin-top: 10px;
+}
+
+.information .sub-title {
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+  font-weight: 500;
+}
+
+.information i {
+  color: #800000;
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.address,
+.time-out {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
