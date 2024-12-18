@@ -76,40 +76,36 @@
 
 /* List service container */
 .list-service {
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ không gian */
-  gap: 20px; /* Khoảng cách giữa các cột */
-  justify-content: space-between; /* Căn các phần tử cách đều nhau */
+  flex-wrap: wrap;
 }
 
 /* Column structure */
 .dv {
-  flex: 0 0 calc(50% - 20px); /* Chia mỗi cột thành 50% trừ khoảng cách */
-  box-sizing: border-box;
+  padding: 5px !important;
   margin-bottom: 20px;
-  padding: 5px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Service box */
 .service {
-  display: flex;
-  align-items: center;
   background-color: #fff;
-  border: 1px solid #d4d4d4; /* Viền nhạt */
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
+  border: 1px solid #d4d4d456;
+  border-radius: 10px;
+  height: 110px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   padding: 10px;
-  cursor: pointer; /* Con trỏ chỉ vào giống link */
 }
 
 /* Hover effect for service */
 .service:hover {
-  transform: scale(1.05); /* Phóng to nhẹ */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(214, 126, 126, 0.342);
   a {
     text-decoration: none;
   }
@@ -117,7 +113,7 @@
 
 /* Logo styling */
 .service .logo img {
-  width: 100px; /* Kích thước logo nhỏ lại */
+  width: 100px;
   height: auto;
   margin-right: 15px; /* Khoảng cách giữa logo và info */
   transition: opacity 0.3s ease-in-out;
@@ -125,53 +121,40 @@
 
 /* Info container */
 .service .info {
-  flex-grow: 1; /* Tự động chiếm không gian còn lại */
+  flex: 1;
 }
 
 .service .info h2 {
   font-size: 18px;
   color: #333;
-  margin: 0 0 5px; /* Giảm khoảng cách trên và dưới */
-  transition: none; /* Tắt hiệu ứng chữ */
+  margin: 0 0 5px;
+  transition: none;
 }
 
 .service .info p {
   margin: 0;
   color: #666;
-  transition: none; /* Tắt hiệu ứng chữ */
+  transition: none;
 }
 
 .service .price {
   font-weight: bold;
-  color: #333;
+  color: #ff0000;
   margin-top: 5px;
-  transition: none; /* Tắt hiệu ứng chữ */
+  transition: none;
 }
 
 /* Icon arrow styling */
-.service .icon i {
+.service .icon {
+  display: flex;
   position: absolute;
-  right: 10px;
+  right: 50px;
   top: 50%;
   transform: translateY(-50%);
   color: #ff66b2; /* Màu hồng */
   font-size: 20px;
   transition: none; /* Tắt hiệu ứng icon */
 }
-
-/* Link styling */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover,
-a:focus,
-a:active {
-  text-decoration: none; /* Xóa gạch chân khi hover, focus, active */
-  color: inherit; /* Đảm bảo không thay đổi màu chữ */
-}
-
 /* Dành cho service khi hover */
 .service:hover a {
   text-decoration: none; /* Đảm bảo gạch chân không xuất hiện khi hover vào service */
