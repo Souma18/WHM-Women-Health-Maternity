@@ -58,3 +58,104 @@
   align-items: center;
   margin-bottom: 10px;
 }
+
+/* Căn chỉnh title */
+.book-service .title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Logo trong phần "book-service" */
+.book-service img {
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+}
+
+/* List service container */
+.list-service {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Column structure */
+.dv {
+  padding: 5px !important;
+  margin-bottom: 20px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Service box */
+.service {
+  background-color: #fff;
+  border: 1px solid #d4d4d456;
+  border-radius: 10px;
+  height: 110px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 10px;
+}
+
+/* Hover effect for service */
+.service:hover {
+  box-shadow: 0 4px 8px rgba(214, 126, 126, 0.342);
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Logo styling */
+.service .logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px; /* Khoảng cách giữa logo và info */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Info container */
+.service .info {
+  flex: 1;
+}
+
+.service .info h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 5px;
+  transition: none;
+}
+
+.service .info p {
+  margin: 0;
+  color: #666;
+  transition: none;
+}
+
+.service .price {
+  font-weight: bold;
+  color: #ff0000;
+  margin-top: 5px;
+  transition: none;
+}
+
+/* Icon arrow styling */
+.service .icon {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff66b2; /* Màu hồng */
+  font-size: 20px;
+  transition: none; /* Tắt hiệu ứng icon */
+}
+/* Dành cho service khi hover */
+.service:hover a {
+  text-decoration: none; /* Đảm bảo gạch chân không xuất hiện khi hover vào service */
+}
