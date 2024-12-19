@@ -20,22 +20,18 @@ body {
 
 .headerTop .login {
   margin-left: auto;
-  text-align: right;
   margin-right: 25px;
+  gap: 20px !important;
 }
 
-.btn-login {
+.headerTop .login i {
   color: #800000;
-  font-weight: bold;
-  border: 1px solid #800000;
-  padding: 5px 15px;
-  border-radius: 20px;
-  text-decoration: none;
+  font-size: 1.5rem;
 }
 
-.btn-login:hover {
-  background-color: #800000;
-  color: white;
+.name {
+  margin-right: 10px;
+  color: black;
 }
 
 .navbar {
@@ -76,9 +72,9 @@ body {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  height: 3px;
   background: #800000;
-  transition: width 0.3s;
+  transition: width 0.5s;
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -109,4 +105,22 @@ body {
   transition: all 0.3s ease;
   opacity: 0;
   visibility: hidden;
+  border: none;
+}
+
+.dropdown-item {
+  color: #800000; /* Màu chữ mặc định */
+  background-color: white; /* Background mặc định */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #ff5b77; /* Màu chữ hồng */
+  background-color: #fff5f7; /* Background tone trắng-hồng */
+}
+
+.dropdown-item:active {
+  color: #800000;
+  background-color: #ffc0cb;
 }
