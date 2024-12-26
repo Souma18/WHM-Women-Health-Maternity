@@ -1,8 +1,0 @@
-package datas;
-
-public class TaiKhoan {
-private int id;
-private String tenTaiKhoan;
-private String matKhau;
-private int role;
-}

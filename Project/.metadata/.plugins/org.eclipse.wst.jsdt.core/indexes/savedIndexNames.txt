@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+S:\Project\LapTrinhWebReal\WHM-Women-Health-Maternity\Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1106658013.index
-3380281659.index
-4131037631.index
-2185995051.index
-4188122899.index
-2463790575.index
-2729354217.index
