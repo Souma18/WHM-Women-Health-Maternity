@@ -1,5 +1,10 @@
+.webapp {
+  background-color: #fae9e962;
+  margin-top: -5px;
+}
+
 .doctor {
-  margin-bottom: 80px;
+  padding-top: 14px;
 }
 
 /* ========================================================================
@@ -114,6 +119,11 @@
 }
 
 /* Các phần tử lọc */
+.input-filter {
+  color: #800000; /* Màu chữ mặc định */
+  background-color: white; /* Background mặc định */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 .input-filter select {
   width: 100%;
@@ -129,14 +139,49 @@
   width: 80px;
 }
 
+/* Loại bỏ viền và hiệu ứng mặc định khi chọn */
+select.form-select {
+  appearance: none;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Khi focus vào select (không viền xanh) */
+select.form-select:focus {
+  border: 1px solid hotpink;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Tùy chọn (option) mặc định */
+.form-select option {
+  background-color: white !important;
+  padding: 10px;
+}
+.form-select option:hover {
+  background-color: pink !important;
+  padding: 10px;
+}
+/* Khi focus vào select (không viền xanh) */
+select.form-select:focus {
+  border: 1px solid hotpink;
+  outline: none;
+  box-shadow: none;
+}
+
 /* Các thẻ card */
 .card {
-  padding: 20px;
+  padding: 10px;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(214, 126, 126, 0.342);
 }
 
 .card-body {
@@ -197,14 +242,6 @@
   color: #fff;
 }
 
-.btn-footer-card {
-  background: linear-gradient(
-    79.98deg,
-    rgb(76, 196, 139) 26.18%,
-    rgb(68, 161, 152) 99.22%
-  );
-}
-
 /* ========================================================================
    3. Modal (Chuyên khoa và Giới tính)
    ======================================================================== */
@@ -256,4 +293,9 @@
     width: 80%;
     height: 160px;
   }
+}
+
+/* thanh trượt */
+.pagination {
+  margin-bottom: 20px;
 }

@@ -104,11 +104,18 @@
   margin-bottom: 30px;
 }
 
+.schedule-container .time-slot {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 .time-slot {
   width: 90px;
   padding: 5px;
   text-align: center;
-  border: 1px solid lightgray;
+  border: 1px solid #efa1d664;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -119,7 +126,6 @@
     rgb(255, 156, 177) 26.18%,
     rgba(212, 122, 129, 0.834) 99.22%
   );
-  color: #800000;
   cursor: pointer;
 }
 

@@ -1,9 +1,15 @@
 /* ============================================================ */
 /* main body */
 /* ============================================================ */
+
+.webapp {
+  background-color: #fae9e962;
+  margin-top: -5px;
+}
+
 .main-panel {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 /* ============================================================ */
@@ -11,10 +17,16 @@
 /* ============================================================ */
 .panel-header {
   color: white;
+  background-color: #fff;
   max-height: 200px;
   overflow: hidden;
-  border: 1px solid lightgray;
+  border: 1px solid #d4d4d456;
   margin-bottom: 20px;
+}
+
+.title {
+  color: #800000;
+  font-weight: bold;
 }
 
 /* Ảnh bác sĩ */
@@ -73,18 +85,16 @@
 /* ==================================================== */
 /* panel thông tin lịch Khám */
 .panel-lichkham {
-  border: 1px solid lightgray;
-  padding-left: 10px;
-  padding-right: 10px;
+  border: 1px solid #d4d4d456;
   padding-top: 20px;
-  padding-bottom: 20px;
   margin-bottom: 20px;
+  background-color: #fff;
 }
 
 /* Bo góc cho select */
 .form-select {
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #d4d4d456;
   padding: 8px;
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng mượt */
 }
@@ -101,6 +111,11 @@
 
 .tuvan {
   gap: 50px;
+  margin-left: 20px;
+}
+
+.tuvan h5 {
+  padding-top: 8px;
 }
 
 /* thời gian khám */
@@ -112,11 +127,18 @@
   margin-bottom: 30px;
 }
 
+.schedule-container .time-slot {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
 .time-slot {
   width: 90px;
   padding: 5px;
   text-align: center;
-  border: 1px solid lightgray;
+  border: 1px solid #efa1d664;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -127,7 +149,6 @@
     rgb(255, 156, 177) 26.18%,
     rgba(212, 122, 129, 0.834) 99.22%
   );
-  color: #800000;
   cursor: pointer;
 }
 
@@ -158,4 +179,108 @@ section ul li::before {
   /* căn theo chiều dọc */
   color: pink;
   font-size: 2rem;
+}
+
+/* pannel đóng góp cộng đồng */
+
+.panel-donggop {
+  background-color: white;
+  border: 1px solid #d4d4d456;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.panel-donggop .header h5 {
+  color: #800000;
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 5px solid #800000;
+  padding-left: 10px;
+}
+
+.list-question .question {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-question .question:last-child {
+  border-bottom: none;
+}
+
+.question-img img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.question-text {
+  flex: 1;
+}
+
+.question-username {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.question-content {
+  font-size: 14px;
+  color: #272727;
+  margin-bottom: 10px;
+}
+
+.question-doctor {
+  display: flex;
+  align-items: center;
+  background-color: #ff99aa37;
+  border-radius: 4px;
+  width: 250px;
+  padding-top: 8px;
+}
+
+.question-doctor img {
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-bottom: 10px;
+}
+
+.question-doctor .doctor-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f64e4e;
+}
+
+.question-date {
+  font-size: 12px;
+  color: #adb5bd;
+  margin: 10px 0;
+}
+
+.question-footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.question-footer span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #6c757d;
+}
+
+.question-footer i {
+  font-size: 16px;
+}
+
+.question-footer p {
+  padding-top: 13px;
 }
