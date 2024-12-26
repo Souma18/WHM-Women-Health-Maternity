@@ -1,0 +1,159 @@
+/* ============================================================ */
+/* main body */
+/* ============================================================ */
+.main-panel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* ============================================================ */
+/* panel header */
+/* ============================================================ */
+.panel-header {
+  color: white;
+  max-height: 200px;
+  overflow: hidden;
+  background-color: rgba(214, 126, 126, 0.062);
+  margin-bottom: 20px;
+}
+
+/* Ảnh bác sĩ */
+.img-dichVu {
+  padding: 0 !important;
+  margin-right: 15px;
+}
+
+/* Phần thông tin bác sĩ */
+.hospital-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hospital-name {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hospital-price {
+  margin: 0;
+  color: rgb(251, 129, 149);
+  font-weight: bold;
+}
+
+.hospital-specialty {
+  color: gray;
+}
+
+/* Phần icon */
+.hospital-icons {
+  margin-top: -20px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+.icon-item i {
+  color: rgb(251, 129, 149);
+  font-size: 1.2rem;
+}
+
+/* ==================================================== */
+/* panel thông tin lịch Khám */
+.panel-lichkham {
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Bo góc cho select */
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng mượt */
+}
+
+/* Màu nền khi hover */
+.form-select:hover {
+  border-color: #ff99aa;
+}
+
+/* Bo góc cho dropdown (danh sách các tùy chọn) */
+.form-select option {
+  border-radius: 8px;
+}
+
+.tuvan {
+  gap: 50px;
+}
+
+/* thời gian khám */
+.schedule-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: lightpink 40%;
+  margin-bottom: 30px;
+}
+
+.schedule-container .time-slot {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.time-slot {
+  width: 90px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #efa1d664;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.time-slot:hover {
+  background: linear-gradient(
+    79.98deg,
+    rgb(255, 156, 177) 26.18%,
+    rgba(212, 122, 129, 0.834) 99.22%
+  );
+  cursor: pointer;
+}
+
+/* kinh nghiệm */
+.panel-kinhnghiem {
+  gap: 10px;
+}
+
+/* đổi màu dấu chấm */
+section ul {
+  list-style-type: none;
+  padding-left: 20px;
+  /* Khoảng cách từ dấu chấm đến văn bản */
+}
+
+section ul li {
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.5;
+}
+
+section ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* căn theo chiều dọc */
+  color: pink;
+  font-size: 2rem;
+}

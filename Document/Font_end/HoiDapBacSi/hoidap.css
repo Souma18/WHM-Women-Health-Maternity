@@ -1,0 +1,206 @@
+/* panner*/
+.panel-search {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://insmart.com.vn/wp-content/uploads/2021/06/Vinmec-2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.panel-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(253, 253, 253, 0.312);
+  z-index: 1;
+}
+
+.panel-search * {
+  position: relative;
+  z-index: 2;
+}
+
+.text-red {
+  font-weight: bold;
+  position: relative;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+    2px 2px 0 #fff;
+}
+
+.custom-input {
+  flex: 1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.416);
+  border-bottom-right-radius: 30px;
+  border: 2px solid #fff;
+  border-left: none;
+  font-size: 1rem;
+}
+
+.custom-input::placeholder {
+  color: #fff;
+}
+
+.custom-input-group-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.304);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 2px solid #fff;
+}
+
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+}
+
+.input-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bi-search {
+  color: #fff;
+}
+
+.topics a {
+  color: #f5577e;
+  text-decoration: none;
+}
+
+.topics a:hover {
+  text-decoration: none;
+  color: #f9285d;
+}
+
+.topic {
+  color: #f5577e;
+  background-color: #ffececea;
+}
+
+.topic:hover {
+  border: 1px solid #ff0000;
+}
+
+.container-xl {
+  margin-left: 80px;
+  margin-right: 70px;
+}
+
+/* list question */
+.card {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #d4d4d456;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Body của card */
+.card-body {
+  padding: 10px 15px;
+}
+
+.card-icon .d-flex {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.card-icon p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.inputs {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs label,
+.inputs input {
+  margin: 5px 0;
+}
+
+.custom-row-spacing {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+/* form ben phải của hỏi đáp bác sĩ */
+/* Đảm bảo cột không vượt quá chiều rộng mong muốn */
+.right-column {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px darkgray;
+  border: 0.5px solid rgba(255, 172, 172, 0.786);
+}
+
+/* Form ở trên */
+.form-container {
+  max-height: 700px;
+}
+
+/* Input tuổi */
+.age-input input {
+  width: 70px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.age-input input:focus {
+  border-color: rgba(255, 172, 172, 0.786);
+  box-shadow: 0 0 5px rgba(255, 172, 172, 0.786);
+}
+/* thẻ viền */
+.custom-border {
+  border-color: pink !important;
+  border-width: 2px !important;
+}
