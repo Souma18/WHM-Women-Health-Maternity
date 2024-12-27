@@ -1,0 +1,39 @@
+package daos;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+public class ConnectDatabase {
+
+    // Lấy Connection từ Connection Pool
+    public static Connection getConnection() {
+        Connection connection = null;
+        try {
+            // Lấy DataSource từ JNDI
+            Context initContext = new InitialContext();
+            DataSource dataSource = (DataSource) initContext.lookup("java:comp/env/jdbc/WHM");
+
+            // Lấy Connection từ DataSource
+            connection = dataSource.getConnection();
+            System.out.println("Kết nối thành công từ Connection Pool!");
+        } catch (NamingException e) {
+            System.err.println("Lỗi khi tra cứu JNDI: " + e.getMessage());
+        } catch (SQLException e) {
+            System.err.println("Lỗi khi lấy kết nối: " + e.getMessage());
+        }
+        return connection;
+    }
+
+    // Đóng Connection
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close(); // Trả Connection về pool
+                System.out.println("Đóng kết nối thành công (trả về Connection Pool).");
+            } catch (SQLException e) {
+     

@@ -1,0 +1,7 @@
+package daos;
+
+public class AccountDAO {
+public checkLogin() {
+	
+}
+}

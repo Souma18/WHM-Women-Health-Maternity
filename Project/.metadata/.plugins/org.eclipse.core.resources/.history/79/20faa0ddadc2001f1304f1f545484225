@@ -1,0 +1,9 @@
+package datas;
+
+public class Account {
+private int accoutId;
+private String username;
+private String email;
+private String role;
+private boolean status;
+}

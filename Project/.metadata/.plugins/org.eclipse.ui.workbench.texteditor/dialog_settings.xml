@@ -2,9 +2,15 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="toggleLink"/>
+		<item value="rem"/>
+		<item value="text-center"/>
+	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&#x09;&lt;!-- &lt;role rolename=&quot;tomcat&quot;/&gt; &lt;role rolename=&quot;role1&quot;/&gt; &lt;user username=&quot;tomcat&quot; "/>
+		<item key="selection" value="/* /* .row {"/>
 		<list key="findhistory">
+			<item value="/* /* .row {"/>
 			<item value="&#x09;&lt;!-- &lt;role rolename=&quot;tomcat&quot;/&gt; &lt;role rolename=&quot;role1&quot;/&gt; &lt;user username=&quot;tomcat&quot; "/>
 		</list>
 	</section>

@@ -26,4 +26,16 @@
     <!--
     <Manager pathname="SESSIONS.ser" />
     -->
+    <!-- cấu hình connection pool -->
+     <Resource name="jdbc/WHM"
+              auth="Container"
+              type="javax.sql.DataSource"
+              maxTotal="20"
+              maxIdle="10"
+              minIdle="5"
+              maxWaitMillis="10000"
+              username="sa"
+              password="01252331055"
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              url="jdbc:sqlserver://localhost:1433;databaseName=WHM;encrypt=true;trustServerCertificate=true;" />
 </Context>
