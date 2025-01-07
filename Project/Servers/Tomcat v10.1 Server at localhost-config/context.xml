@@ -35,7 +35,7 @@
               minIdle="5"
               maxWaitMillis="10000"
               username="sa"
-              password="01252331055"
+              password="1"
               driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
               url="jdbc:sqlserver://localhost:1433;databaseName=WHM;encrypt=true;trustServerCertificate=true;" />
 </Context>

@@ -1,0 +1,133 @@
+@charset "UTF-8";
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.headerTop {
+  background-color: #ffc0cb;
+  padding: 15px 15px;
+}
+
+.headerTop .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerTop .hotline {
+  color: #800000;
+  font-weight: bold;
+}
+
+.headerTop .login {
+  margin-left: auto;
+  margin-right: 25px;
+  gap: 20px !important;
+}
+
+.headerTop .login i {
+  color: #800000;
+  font-size: 1.5rem;
+}
+
+.name {
+  margin-right: 10px;
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  padding: 0px 15px;
+  height: auto;
+}
+
+.navbar .container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.navbar-brand img {
+  display: block;
+  max-width: 100%;
+  height: 35px;
+  max-height: 100%;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  text-align: right;
+}
+
+.navbar-nav .nav-link {
+  color: #800000;
+  font-weight: bold;
+  position: relative;
+  padding: 5px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #800000;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #800000;
+  transition: width 0.5s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border-color: #800000; /* Đổi màu viền nút toggler */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(128, 0, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* hover đặt khám */
+/* Style dropdown for hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+/* Optional: Add transition for smooth dropdown effect */
+.dropdown-menu {
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+  color: #800000; /* Màu chữ mặc định */
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #ff5b77 !important; /* Màu chữ hồng */
+  background-color: #fff5f7 !important; /* Background tone trắng-hồng */
+}
+
+.dropdown-item:active {
+  color: #800000;
+  background-color: #ffc0cb;
+}

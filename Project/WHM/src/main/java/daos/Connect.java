@@ -9,8 +9,8 @@ import jakarta.servlet.ServletContext;
 public class Connect { 
 	    // Cấu hình kết nối đến SQL Server
 	    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=WHM;encrypt=true;trustServerCertificate=true;";
-	    private static final String USERNAME = "sa";  // Thay đổi theo tên người dùng của bạn
-	    private static final String PASSWORD = "01252331055";  // Thay đổi theo mật khẩu của bạn
+	    private static final String USERNAME = "sa"; 
+	    private static final String PASSWORD = "1";
 
 	    // Hàm kiểm tra kết nối
 	    public static void main(String[] args) throws SQLException {

@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Servlet implementation class HealthRecordServlet
  */
-@WebServlet("/HealthRecord")
+@WebServlet("/healthRecord")
 public class HealthRecordServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -19,19 +19,17 @@ public class HealthRecordServlet extends HttpServlet {
      */
     public HealthRecordServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+    /**
+	 * Handles GET requests.
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		request.getRequestDispatcher("/view/healthRecord.jsp").forward(request, response);
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * Handles POST requests (optional, for form submissions or other use cases).
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
