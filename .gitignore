@@ -1,9 +1,6 @@
-# Tệp cấu hình server (ví dụ, tệp metadata của server)
-*.log
-*.pid
-*.bak
-*.swp
-*.tmp
+# Eclipse metadata
+.metadata/
+Servers/
 
 # Tệp metadata của IDE
 .idea/
