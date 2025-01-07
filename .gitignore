@@ -1,0 +1,41 @@
+# Eclipse metadata
+.metadata/
+Servers/
+
+# Tệp metadata của IDE
+.idea/
+.vscode/
+
+# Thư mục build
+/target/
+bin/
+/obj/
+
+# Tệp cấu hình của ứng dụng server
+*.iml
+
+# Tệp cấu hình database nếu không cần thiết
+*.db
+*.sqlite
+
+# Tệp cấu hình của môi trường phát triển hoặc các tệp phụ trợ
+*.log
+
+# Thư mục cấu hình của Tomcat
+conf/
+webapps/
+
+# Tệp XML của Tomcat (server.xml, context.xml, web.xml,...)
+conf/*.xml
+webapps/*.xml
+
+# Các tệp khác không cần thiết của Tomcat (log, temp, work...)
+logs/
+temp/
+work/
+
+# Các tệp khác của Tomcat không cần thiết
+*.properties
+*.yml
+*.class
+*.jar
