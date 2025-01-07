@@ -11,7 +11,7 @@
 	href="<%=request.getContextPath()%>/bootstrap/bootstrap.min.css"
 	rel="stylesheet" />
 <link type="text/css" rel="stylesheet"
-	href="<%=request.getContextPath()%>/DangNhap/login.css" />
+	href="<%=request.getContextPath()%>/css/login.css" />
 </head>
 <body>
 	<!-- Main Content -->
@@ -41,9 +41,9 @@
 							</div>
 							<div class="row justify-content-center">
 								<input type="submit" value="Đăng nhập" class="btn" />
-							<c:if test="${not empty message}">
-								<p style="color: red;">${message}</p>
-							</c:if>
+								<c:if test="${not empty message}">
+									<p style="color: red;">${message}</p>
+								</c:if>
 							</div>
 						</form>
 					</div>
@@ -89,38 +89,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="../bootstrap/bootstrap.min.js"></script>
 
-	<script>
-		// Hàm chuyển đổi giữa form đăng nhập và đăng ký
-		function toggleForms() {
-			// Lấy phần tử form đăng nhập và đăng ký
-			const loginForm = $("#loginForm");
-			const registerForm = $("#registerForm");
-
-			// Chuyển đổi giữa hai form
-			if (loginForm.hasClass("d-none")) {
-				loginForm.removeClass("d-none"); // Hiển thị form đăng nhập
-				registerForm.addClass("d-none"); // Ẩn form đăng ký
-			} else {
-				loginForm.addClass("d-none"); // Ẩn form đăng nhập
-				registerForm.removeClass("d-none"); // Hiển thị form đăng ký
-			}
-
-			// Cập nhật tiêu đề form và liên kết chuyển đổi
-			const isLoginFormVisible = loginForm.hasClass("d-none");
-
-			$("#formTitle").text(isLoginFormVisible ? "Đăng ký" : "Đăng nhập");
-
-			$("#toggleLink")
-					.html(
-							isLoginFormVisible ? 'Bạn đã có tài khoản? <a href="#" onclick="toggleForms()">Đăng nhập tại đây</a>'
-									: 'Bạn chưa có tài khoản? <a href="#" onclick="toggleForms()">Đăng ký tại đây</a>');
-		}
-
-		// Đảm bảo form đăng ký ban đầu bị ẩn
-		$(document).ready(function() {
-			$("#registerForm").addClass("d-none");
-		});
-	</script>
+	<script src="../js/login.js"></script>
 
 </body>
 </html>
